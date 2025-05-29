@@ -5,6 +5,9 @@
     text-decoration: none;
     outline: none;
     list-style: none;
+    font-family: "Kalam";
+    font-weight: 400;
+
 }
 html{
     scroll-behavior: smooth;
@@ -78,6 +81,7 @@ header{
     height: 100vh;
     display: flex;
     justify-content: center;
+    background-attachment: fixed;
 }
 .linha{
     width: 100%;
@@ -187,6 +191,7 @@ h1{
 .slogan{
     margin-top: 370px;
     margin-left: 55px;
+    text-shadow: 5px 5px 15px black;
 }
 footer{
     width: 100%;
@@ -218,4 +223,25 @@ footer{
     display: flex;
     justify-content: center;
     border-radius: 20px;
+}
+.icones-sociais {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin: 20px 0;
+    font-size: 28px;
+}
+
+.icones-sociais a {
+    color: white;
+    transition: color 0.3s, transform 0.3s;
+    transform: scale(1.2);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+.icones-sociais .instagram:hover {
+    color: #eb5dad;
+    transform: scale(1.5);
+}
+.social{
+    font-size: 20px;
 }
