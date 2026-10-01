@@ -245,3 +245,32 @@ footer{
 .social{
     font-size: 20px;
 }
+/* ===== Celular ===== */
+@media (max-width: 768px) {
+    header { height: auto; padding: 8px 12px; flex-direction: column; gap: 6px; }
+    header > a { display: block; }
+    .logo { width: auto; height: auto; justify-content: center; }
+    .logo img { height: 48px; margin-right: 10px; }
+    .menu { width: 100%; }
+    .menu ul { gap: 6px; overflow-x: auto; scrollbar-width: none; padding-bottom: 4px; }
+    .menu ul::-webkit-scrollbar { display: none; }
+    .menu ul li a { display: block; padding: 6px 14px; margin: 0; white-space: nowrap; background-color: rgba(255,255,255,0.1); }
+
+    .linha_home, .linha, .linha_pratos, .linha_entradas, .linha_sobremesas, .linha_bebidas {
+        height: auto; min-height: 100vh; background-attachment: scroll; background-position: center;
+    }
+    .container, .container_pratos, .container_1 { width: 100%; padding: 130px 16px 40px; }
+    .container_1 { min-height: 100vh; display: flex; align-items: flex-end; }
+    .slogan { margin: 0; font-size: 24px; }
+    h1 { font-size: 26px; }
+    .texto { width: 100%; margin-bottom: 20px; text-align: center; }
+
+    .pratos { width: 100%; height: auto; display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .card { width: 100%; height: auto; flex-direction: column; align-items: center; text-align: center; padding-bottom: 10px; overflow: hidden; }
+    .card img { height: 120px; object-fit: cover; }
+
+    footer { height: auto; flex-direction: column; padding: 20px 16px; gap: 10px; text-align: center; }
+    .col_rodape { width: 100%; height: auto; flex-direction: column; gap: 6px; }
+    .col_rodape img { height: 60px; }
+    .icones-sociais { margin: 0; align-items: center; }
+}
